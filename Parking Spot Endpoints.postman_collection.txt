@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "660b5365-491f-47b6-90ef-0a5901dea58a",
+		"name": "Parking Spot Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26798422"
+	},
+	"item": [
+		{
+			"name": "POST Parking Spot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"205B\",\r\n    \"licensePlateCar\": \"QIG0134\",\r\n    \"brandCar\": \"audi\",\r\n    \"modelCar\": \"q5\",\r\n    \"colorCar\": \"black\",\r\n    \"responsibleName\": \"Fábio\",\r\n    \"apartment\": \"205\",\r\n    \"block\": \"B\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				},
+				"description": "Método implementado para inserir um registro na tabela do Banco de dados."
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL Parking Spot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				},
+				"description": "Método implementando para retornar todos os registros da tabela do banco de dados."
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE Parking Spot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/fa136110-ba32-4cfe-9ed7-154e9145f3ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"fa136110-ba32-4cfe-9ed7-154e9145f3ec"
+					]
+				},
+				"description": "Método implementado para retornar um registro de um ID específico."
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Parking Spot",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/21a436c5-6249-47db-b3ff-c91dcc66d86d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"21a436c5-6249-47db-b3ff-c91dcc66d86d"
+					]
+				},
+				"description": "Método implementado para deletar um registro com um ID específico."
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Parking Spot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{      \r\n    \"parkingSpotNumber\": \"101A\",\r\n    \"licensePlateCar\": \"MJT9769\",\r\n    \"brandCar\": \"renault\",\r\n    \"modelCar\": \"sandero\",\r\n    \"colorCar\": \"white\",\r\n    \"registrationDate\": \"2023-04-08T04:28:48.864\",\r\n    \"responsibleName\": \"Dani\",\r\n    \"apartment\": \"101\",\r\n    \"block\": \"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/2897f1c0-36c6-4cf7-9f07-85e7ae4265a7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"2897f1c0-36c6-4cf7-9f07-85e7ae4265a7"
+					]
+				},
+				"description": "Método implementado para atualizar um registro com um ID específico."
+			},
+			"response": []
+		}
+	]
+}

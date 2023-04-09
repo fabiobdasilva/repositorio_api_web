@@ -4,7 +4,7 @@ Professor!
 
 Esse repositório foi criado para disponibilizar o projeto desenvolvido em java, onde foi implementado uma API rest para controlar as vagas de estacionamento de um condomínio.
 Para criar as configurações iniciais do projeto foi utilizado o Spring Initializr, disponível no endereço https://start.spring.io/ onde foi utilizada a versão 2.7.0 do Spring boot, 
-linguagem Java, projeto Maven (gerenciador de dependências) com as dependências citadas abaixo (ver arquivo parking-control.zip):
+linguagem Java, projeto Maven (gerenciador de dependências) com as dependências citadas abaixo:
 *  Spring Web
 *  Spring Data JPA
 *  Validation 
